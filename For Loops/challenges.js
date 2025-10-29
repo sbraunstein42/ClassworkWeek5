@@ -1,62 +1,43 @@
-
-// ================================
-// JavaScript Array Challenges
-// ================================
+// -----------------------------------------------
+// Challenge 1: Count to 10
+// Use a for loop to console.log the numbers 1 through 10.
+for (let i = 0; i < 10; i++) {
+    console.log(i + 1);
+}
 
 // -----------------------------------------------
-
-// Challenge 1: Access an Array Item
-// Create an array called "fruits" with at least 4 fruit names.
-// Log the first item to the console.
-
-
-
-
+// Challenge 2: Even Numbers Only
+// Use a for loop to console.log only even numbers from 2 to 20.
+for (let i = 2; i <= 20; i += 2) {
+    console.log(i);
+}
 
 // -----------------------------------------------
-
-// Challenge 2: Change an Array Item
-// Using the "fruits" array, change the second fruit to something new.
-// Log the array to confirm the change.
-
-
-
-
+// Challenge 3: Count Backwards
+// Use a for loop to console.log numbers from 10 down to 1.
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
 
 // -----------------------------------------------
-
-// Challenge 3: Add an Item to an Array
-// Add a new fruit to the end of the "fruits" array using push().
-// Log the array to confirm it was added.
-
-
-
-
-// -----------------------------------------------
-
-// Challenge 4: 2D Array Access
-// Create a 2D array called "matrix" that is 2x2.
-// Fill it with numbers of your choice.
-// Log the number in the first row, second column.
-
-
-
+// Challenge 4: Create an array!
+// Use a for loop to create an array of numbers, counting from 3 to 7.
+// Then, log the array!
+let someNumbers = [];
+for(let i = 3; i < 8; i++) {
+    someNumbers.push(i);
+}
+console.log(someNumbers)
 
 // -----------------------------------------------
-
-// Challenge 5: Parallel Arrays
-// Create two arrays: "names" and "ages".
-// Put 3 items in each so that the indices match (example: names[0] is  "Alice", ages[0] is 10).
-// Log a sentence using the first index like: "Alice is 10 years old."
-
-
-
-
-
-// -----------------------------------------------
-
-// Challenge 6: Sum All Numbers in a 2D Array
-// Create a 2D array called "numbers" with at least 3 rows and 3 columns filled with numbers.
-// Use a loop to calculate the sum of all numbers in the array.
-// Log the total sum to the console.
-
+// Challenge 6: A mountain!
+// Use a NESTED for loop to write the word "code" once, then twice, then three times.
+// (Hint -- can you use the counting variable from the first 
+// loop to tell the second one how many times to run?)
+for (let i = 0; i < 3; i++) {
+    let thingToLog = "";
+    for (let j = 0; j < i + 1; j++) {
+        thingToLog += "code";
+    }
+    console.log(thingToLog);
+}
